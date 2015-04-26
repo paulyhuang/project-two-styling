@@ -26,8 +26,6 @@
 
 <body>
 
-
-
 <div id="wrapper">
 	<!-- start header -->
 	<header>
@@ -43,16 +41,17 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="events.html">Events</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div> -->
 
-<!-- Navigation -->
+
+        	<!-- Navigation -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -68,70 +67,128 @@
 
       <ul class="nav navbar-nav navbar-right">
         <ul class="nav navbar-nav">
-         <li class="active"><a href="index.html">Home</a></li>
+         <li><a href="index.html">Home</a></li>
          <li><a href="about.html">About</a></li>
          <li><a href="events.html">Events</a></li>
-         <li><a href="contact.html">Contact</a></li>
+         <li class="active"><a href="contact.html">Contact</a></li>
        </ul>
      </div>
      <!-- /.navbar-collapse -->
    </div>
    <!-- /.container-fluid -->
  </nav>
-
 	</header>
 	<!-- end header -->
 
-	<section id="featured">
-	<!-- start slider -->
+	<section id="content">
+		<br> <!-- temporary fix to navbar hiding content -->
+		<br>
+		<br>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-	<!-- Slider -->
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
-              <li>
-                <img src="img/slides/mkwan_cover_1.jpg" alt="" />
-
-              </li>
-              <li>
-                <img src="img/slides/2.jpg" alt="" />
-
-              </li>
-              <li>
-                <img src="img/slides/3.jpg" alt="" />
-              </li>
-            </ul>
-        </div>
-	<!-- end slider -->
-			</div>
-		</div>
-	</div>	
-	</section>
-
-	<section class="callaction">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<div class="big-cta">
-					<div class="cta-text">
-						<h2><span>Washington University in St. Louis </span>- Chinese Students Association</h2>
+				<h4><strong>If you would like to reach us, please fill out the contact form below!</strong></h4>
+				<p>If you would like to join, collaborate with, or even just message CSA, please fill out the below form! We are always looking for fresh ideas and passionate members.</p>
+				<!-- <form id="contactform" action="contact/contact.php" method="post" class="validateform" name="send-contact">
+					<div id="sendmessage">
+						 Your message has been sent. Thank you!
 					</div>
-				</div>
+					<div class="row">
+						<div class="col-lg-4 field">
+							<input type="text" name="name" placeholder="* Enter your full name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+							<div class="validation">
+							</div>
+						</div>
+						<div class="col-lg-4 field">
+							<input type="text" name="email" placeholder="* Enter your email address" data-rule="email" data-msg="Please enter a valid email" />
+							<div class="validation">
+							</div>
+						</div>
+						<div class="col-lg-4 field">
+							<input type="text" name="subject" placeholder="Enter your subject" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+							<div class="validation">
+							</div>
+						</div>
+						<div class="col-lg-12 margintop10 field">
+							<textarea rows="12" name="message" class="input-block-level" placeholder="* Your message here..." data-rule="required" data-msg="Please write something"></textarea>
+							<div class="validation">
+							</div>
+							<p>
+								<button class="btn btn-theme margintop10 pull-left" type="submit">Submit message</button>
+								<span class="pull-right margintop20">* Please fill in every part!</span>
+							</p>
+						</div>
+					</div>
+				</form> -->
+
+        <!-- <a href="" data-toggle="modal" data-target="#bannerformmodal">Load me</a> -->
+
+        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModalLabel">Contact Us!</button>
+
+      <div class="modal fade myModalLabel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="myModalLabel">
+
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Contact Form</h4>
+                </div>
+                <div class="modal-body">
+                     <form id="requestacallform" method="POST" name="requestacallform">
+
+                                <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input id="first_name" type="text" class="form-control" placeholder="First Name" name="first_name"/>
+                                    </div>
+                              </div>
+                              <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input id="last_name" type="text" class="form-control" placeholder="Last Name" name="last_name"/>
+                                    </div>
+                              </div>
+                                <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <input id="email1" type="text" class="form-control" placeholder="Email" name="email1" onchange="validateEmailAdd();"/>
+                                    </div>
+                              </div>
+                                <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                    <input id="phone_mobile" type="text" class="form-control" placeholder="Mobile" name="phone_mobile"/>
+                                    </div>
+                              </div>
+                              <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-group"></i></span>
+                                    <input id="subject_c" type="text" class="form-control" placeholder="Subject" name="subject_c"/>
+                                    </div>
+                              </div>
+                                <div class="control-group">
+                                    <div class="controls">                     
+                                        <textarea id="description" type="text" name="description"  placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                  </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+              </div>          
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
 			</div>
 		</div>
 	</div>
 	</section>
-
-	<section>
-  	<div class="container">
-    	<div class="row">
-      		<div class="col-lg-8 col-lg-offset-2">
-        		<p>The Chinese Students Association, abbreviated to CSA, is one of WUSTL's most prominent cultural organizations. We put on events for the student body every year to share and promote awareness for Chinese and Chinese-American cultural and societal issues while supporting a social environment for students of all backgrounds at Washington University.  </p>
-      		</div>
-		</div>
-	</div>     
-    </section>
 
 	<footer class="text-center">
           <div class="footer-above">
@@ -151,8 +208,7 @@
                 </div>
                 <div class="footer-col col-md-4">
                   <h3>Want to Reach Us?</h3>
-                  <p>csa@su.wustl.edu
-                    <br>
+                  <p>csa@su.wustl.edu <br>
                     <a href="" data-toggle="modal" data-target="#myModalLabel">Contact Us!</a></p>
       <div class="modal fade myModalLabel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="myModalLabel">
 
@@ -208,11 +264,16 @@
                 <button type="button" class="btn btn-primary">Submit</button>
               </div>          
                 </div>
+                </div>
+                </div>
+                </div>
               </div>
             </div>
           </div>
-        </footer>
-    </div>
+        </div>
+      </footer>
+
+</div>
 <!-- <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a> -->
 <!-- javascript
     ================================================== -->
@@ -228,5 +289,6 @@
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/validate.js"></script>
 </body>
 </html>
